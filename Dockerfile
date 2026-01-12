@@ -1,6 +1,8 @@
 FROM python:3.12-slim
-LABEL "maintainer=agent1237@datawhalechina.cn"
-LABEL "teamName=agent①②③⑦"
+LABEL maintainer="agent1237@datawhalechina.cn"
+LABEL team="agent①②③⑦"
+LABEL project="hello-agents"
+LABEL git.repo="https://github.com/pamdla/hello-agents"
 
 ENV TZ=Asia/Shanghai \
     DEBIAN_FRONTEND=noninteractive
