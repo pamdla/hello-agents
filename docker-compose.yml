@@ -1,9 +1,10 @@
 services:
-  hellagents:
+  helloagents:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: helloagents:team1237.v1
+    image: helloagents:team1237.v1
+    container_name: helloagents
     restart: unless-stopped
     volumes:
       - ./hello-agents:/learning/hello-agents

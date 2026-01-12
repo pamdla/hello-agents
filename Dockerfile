@@ -11,6 +11,10 @@ WORKDIR /learning
 
 COPY requirements.txt .
 
+RUN echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main" > /etc/apt/sources.list && \
+    echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main" >> /etc/apt/sources.list && \
+    echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian-security bookworm-security main" >> /etc/apt/sources.list
+
 RUN apt update \
     && apt install -y --no-install-recommends \
     && apt install -y git wget make gcc g++ \
