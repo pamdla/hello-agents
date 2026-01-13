@@ -1,5 +1,6 @@
 services:
   helloagents:
+    tty: true
     build:
       context: .
       dockerfile: Dockerfile
@@ -7,4 +8,4 @@ services:
     container_name: helloagents
     restart: unless-stopped
     volumes:
-      - ./hello-agents:/learning/hello-agents
+      - $PWD:/learning
