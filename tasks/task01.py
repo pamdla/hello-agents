@@ -82,7 +82,7 @@ class ToolExecutor:
 
 
 class ReActAgent:
-    def __init__(self, llm_client: HelloAgentsLLM, tool_executor: ToolExecutor, max_steps: int = 5):
+    def __init__(self, llm_client: HelloAgentsLLM, tool_executor: ToolExecutor, max_steps: int = 2):
         self.llm_client = llm_client
         self.tool_executor = tool_executor
         self.max_steps = max_steps
@@ -129,7 +129,7 @@ class ReActAgent:
             # 4. 执行Action
             if action.startswith("Finish"):
                 # 如果是Finish指令，提取最终答案并结束
-                final_answer = re.match(r"Finish\[(.*)\]", action).group(1)
+                final_answer = re.match(r"Finish\((.*)\)", action).group(1)
                 print(f"🎉 最终答案: {final_answer}")
                 return final_answer
 
@@ -191,8 +191,8 @@ if __name__ == '__main__':
     Thought: 你的思考过程，用于分析问题、拆解任务和规划下一步行动。
     Action: 你决定采取的行动，必须是以下格式之一:
     - `{{tool_name}}[{{tool_input}}]`:调用一个可用工具。
-    - `Finish[最终答案]`:当你认为已经获得最终答案时。
-    - 当你收集到足够的信息，能够回答用户的最终问题时，你必须在Action:字段后使用 finish[最终答案] 来输出最终答案。
+    - `Finish(最终答案)`:当你认为已经获得最终答案时。
+    - 当你收集到足够的信息，能够回答用户的最终问题时，你必须在Action:字段后使用 finish(最终答案) 来输出最终答案。
 
     现在，请开始解决以下问题:
     Question: {question}
@@ -202,45 +202,3 @@ if __name__ == '__main__':
     agent = ReActAgent(llm_client=llm, tool_executor=tool_executor)
     question = "华为最新的手机是哪一款？它的主要卖点是什么？"
     agent.run(question)
-# if __name__ == '__main__':
-#     # 1. 初始化工具执行器
-#     toolExecutor = ToolExecutor()
-
-#     # 2. 注册我们的实战搜索工具
-#     search_description = "一个网页搜索引擎。当你需要回答关于时事、事实以及在你的知识库中找不到的信息时，应使用此工具。"
-#     toolExecutor.registerTool("Search", search_description, search)
-
-#     # 3. 打印可用的工具
-#     print("\n--- 可用的工具 ---")
-#     print(toolExecutor.getAvailableTools())
-
-#     # 4. 智能体的Action调用，这次我们问一个实时性的问题
-#     print("\n--- 执行 Action: Search['英伟达最新的GPU型号是什么'] ---")
-#     tool_name = "Search"
-#     tool_input = "英伟达最新的GPU型号是什么"
-
-#     tool_function = toolExecutor.getTool(tool_name)
-#     if tool_function:
-#         observation = tool_function(tool_input)
-#         print("--- 观察 (Observation) ---")
-#         print(observation)
-#     else:
-#         print(f"错误:未找到名为 '{tool_name}' 的工具。")
-
-# >>>
-# 工具 'Search' 已注册。
-
-# --- 可用的工具 ---
-# - Search: 一个网页搜索引擎。当你需要回答关于时事、事实以及在你的知识库中找不到的信息时，应使用此工具。
-
-# --- 执行 Action: Search['英伟达最新的GPU型号是什么'] ---
-# 🔍 正在执行 [SerpApi] 网页搜索: 英伟达最新的GPU型号是什么
-# --- 观察 (Observation) ---
-# [1] GeForce RTX 50 系列显卡
-# GeForce RTX™ 50 系列GPU 搭载NVIDIA Blackwell 架构，为游戏玩家和创作者带来全新玩法。RTX 50 系列具备强大的AI 算力，带来升级体验和更逼真的画面。
-
-# [2] 比较GeForce 系列最新一代显卡和前代显卡
-# 比较最新一代RTX 30 系列显卡和前代的RTX 20 系列、GTX 10 和900 系列显卡。查看规格、功能、技术支持等内容。
-
-# [3] GeForce 显卡| NVIDIA
-# DRIVE AGX. 强大的车载计算能力，适用于AI 驱动的智能汽车系统 · Clara AGX. 适用于创新型医疗设备和成像的AI 计算. 游戏和创作. GeForce. 探索显卡、游戏解决方案、AI ...
