@@ -27,8 +27,12 @@ dwhelloagents
     ├── task01_3.py
     ├── task01_4.py
 └── chapter7
-    ├── base.py
-    ├── registry.py
+    ├── .env.example
+    ├── my_llm.py
+    ├── my_main.py
+    ├── my_react_agent.py
+    ├── my_simple_agent.py
+    ├── test_simple_agent.py
 
 ```
 
