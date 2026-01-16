@@ -20,12 +20,16 @@ dwhelloagents
 ├── README.md
 ├── docker-compose.yml
 ├── requirements.txt
-└── tasks
+└── chapter4
     ├── task0.py
     ├── task01_1.py
     ├── task01_2.py
     ├── task01_3.py
     ├── task01_4.py
+└── chapter7
+    ├── base.py
+    ├── registry.py
+
 ```
 
 ## 使用方法
@@ -34,7 +38,7 @@ dwhelloagents
 尽可能的使用docker，隔离宿主机环境，避免不可预料的风险，同时便于独立和管理开发/测试/生产等环境，各不冲突。
 
 <details>
-<summary>task0</summary>
+<summary>chapter4(1)</summary>
 
 ```bash
 mkdir YOUR-PATH
@@ -59,7 +63,7 @@ python task0.py
 ### Day1 | 智能体经典范式构建
 
 <details>
-<summary>task01</summary>
+<summary>chapter4(2)</summary>
 
 ```
 1. follow教程步骤，了解每一功能；
@@ -70,6 +74,24 @@ python task0.py
 6. 按进程组建代码和引用
 ```
 </details>
+
+
+### Day2 | 构建你的Agent框架
+
+将按章节创建目录与代码，以及命名任务。
+
+<details>
+<summary>chapter7</summary>
+```
+1. follow教程步骤，了解每一功能；
+2. 修改.env配置
+3. 修改my_main.py使其默认使用本地Ollama为provider
+4. 测试my_main.py，出现bug：重复输出字符，待修改
+5. 测试test_my_simple_agent.py，复现了bug，同时任务计算正确
+6. 本地小模型能力有所欠缺，建议使用更大的模型
+```
+</details>
+
 
 ## 其它资源
 1. Makrdown基础：[Basic Syntax](https://www.markdownguide.org/basic-syntax/)

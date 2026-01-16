@@ -4,8 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: helloagents:team1237.v1
+    image: helloagents:team1237.v2
     container_name: helloagents
+    hostname: team1237
     restart: unless-stopped
     volumes:
       - $PWD:/learning
