@@ -20,20 +20,23 @@ dwhelloagents
 ├── README.md
 ├── docker-compose.yml
 ├── requirements.txt
-└── chapter4
-    ├── task0.py
-    ├── task01_1.py
-    ├── task01_2.py
-    ├── task01_3.py
-    ├── task01_4.py
-└── chapter7
-    ├── .env.example
-    ├── my_llm.py
-    ├── my_main.py
-    ├── my_react_agent.py
-    ├── my_simple_agent.py
-    ├── test_simple_agent.py
-
+├── chapter4
+│   ├── task0.py
+│   ├── task01_1.py
+│   ├── task01_2.py
+│   ├── task01_3.py
+│   ├── task01_4.py
+├── chapter7
+│   ├── .env.example
+│   ├── my_llm.py
+│   ├── my_main.py
+│   ├── my_react_agent.py
+│   ├── my_simple_agent.py
+│   ├── test_simple_agent.py
+├── chapter8
+│   ├── .env.example
+│   ├── .env.py
+└── final
 ```
 
 ## 使用方法
@@ -96,6 +99,21 @@ python task0.py
 ```
 </details>
 
+
+### Day3 | 记忆与检索
+
+将按章节创建目录与代码，以及命名任务。
+
+<details>
+<summary>chapter8</summary>
+```
+1. follow教程步骤，了解每一功能；
+2. 修改.env的模型或服务配置
+3. 修复一些能自主修改的bug，比如账户信息，版本或注入函数等
+4. 遗留了问题：'QdrantClient' object has no attribute 'search'，'CollectionInfo' object has no attribute 'vectors_count'
+5. 体会良久~重新认识了之前使用RAG的效果很差等问题的可能原因
+```
+</details>
 
 ## 其它资源
 1. Makrdown基础：[Basic Syntax](https://www.markdownguide.org/basic-syntax/)
