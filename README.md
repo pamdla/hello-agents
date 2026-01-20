@@ -39,8 +39,8 @@ dwhelloagents
 │   ├── test.py
 ├── chapter9
 │   ├── .env
-│   ├── quick.py
-│   ├── test.py
+│   ├── demo.py
+│   ├── demo1.py
 └── final
 ```
 
