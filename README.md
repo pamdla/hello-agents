@@ -34,8 +34,9 @@ dwhelloagents
 │   ├── my_simple_agent.py
 │   ├── test_simple_agent.py
 ├── chapter8
-│   ├── .env.example
-│   ├── .env.py
+│   ├── .env
+│   ├── quick.py
+│   ├── test.py
 └── final
 ```
 
