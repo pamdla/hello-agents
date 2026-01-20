@@ -2,6 +2,7 @@ openai
 python-dotenv
 loguru
 google-search-results
-hello-agents[all]==0.2.0
+hello-agents[all]==0.2.8
 qdrant-client~=1.15.1
+gradio~=4.0
 spacy

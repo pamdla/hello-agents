@@ -37,6 +37,10 @@ dwhelloagents
 │   ├── .env
 │   ├── quick.py
 │   ├── test.py
+├── chapter9
+│   ├── .env
+│   ├── quick.py
+│   ├── test.py
 └── final
 ```
 
@@ -115,6 +119,26 @@ python task0.py
 5. 体会良久~重新认识了之前使用RAG的效果很差等问题的可能原因
 ```
 </details>
+
+
+### Day4 | 上下文工程
+
+将按章节创建目录与代码，以及命名任务。
+
+<details>
+<summary>chapter9</summary>
+```
+1. follow教程步骤，了解每一功能；
+2. 简单修改.env，重构了目录结构，为qdrant和neo4j等
+3. memory_data默认会在每个章节目录自动创建，目前就不该了
+4. 跑通示例1和2，补充录屏
+5. 目前看，follow代码和调试跑通，问题不大
+6. 其它案例读完的感受：目前agent的操作都涉及人为的【精心】设计，我觉得这不是最佳的agent设计。限于初衷是agent的课程教学，原作和源码是很好的。可能有了基本的思想和实现，未来可以达到课程的初衷 -- 设计自己的agent。
+7. 每学一节，进步一点~~🆙
+```
+</details>
+
+
 
 ## 其它资源
 1. Makrdown基础：[Basic Syntax](https://www.markdownguide.org/basic-syntax/)
