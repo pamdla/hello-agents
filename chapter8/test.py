@@ -21,7 +21,7 @@ memory_tool = MemoryTool(user_id="neo4j")
 tool_registry.register_tool(memory_tool)
 
 # 添加RAG工具
-rag_tool = RAGTool(knowledge_base_path="./knowledge_base")
+rag_tool = RAGTool(knowledge_base_path="/db/knowledge_base")
 tool_registry.register_tool(rag_tool)
 
 # 为Agent配置工具

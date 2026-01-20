@@ -110,7 +110,7 @@ python task0.py
 1. follow教程步骤，了解每一功能；
 2. 修改.env的模型或服务配置
 3. 修复一些能自主修改的bug，比如账户信息，版本或注入函数等
-4. 遗留了问题：'QdrantClient' object has no attribute 'search'，'CollectionInfo' object has no attribute 'vectors_count'
+4. 遗留了问题：'QdrantClient' object has no attribute 'search'，'CollectionInfo' object has no attribute 'vectors_count' --- 解决办法是，降级qdrant-client==1.15.1
 5. 体会良久~重新认识了之前使用RAG的效果很差等问题的可能原因
 ```
 </details>

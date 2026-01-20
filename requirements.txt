@@ -3,4 +3,5 @@ python-dotenv
 loguru
 google-search-results
 hello-agents[all]==0.2.0
+qdrant-client~=1.15.1
 spacy
