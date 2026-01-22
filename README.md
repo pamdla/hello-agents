@@ -46,6 +46,10 @@ dwhelloagents
 │   ├── demo1.py
 ├── chapter10
 │   ├── .env
+│   ├── test.py
+│   ├── demo1.py
+│   ├── demo2.py
+│   ├── demo3.py
 └── final
 ```
 
@@ -168,3 +172,4 @@ python task0.py
 ## 其它资源
 1. Makrdown基础：[Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 2. Datawhale原仓库地址：[hello-agents](https://github.com/datawhalechina/hello-agents)
+3. 飞书地址：[Team学习周进度与读书笔记](https://tcn2lptlwqj2.feishu.cn/wiki/MzQDwq7aPimtrXkkfpbc5MW9nMc)
