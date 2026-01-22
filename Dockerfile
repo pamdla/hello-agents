@@ -24,7 +24,12 @@ RUN apt update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+# chapter9
 RUN pip3 install --no-cache-dir -r requirements.txt
 RUN python -m spacy download zh_core_web_sm \
     python -m spacy download en_core_web_sm
 
+# chapter10
+RUN apt update \
+    && sudo apt install -y nodejs npm \
+    && rm -rf /var/lib/apt/lists/*
