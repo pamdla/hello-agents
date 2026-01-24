@@ -169,6 +169,21 @@ python task0.py
 </details>
 
 
+### Day6 | 综合案例进阶
+
+<details>
+<summary>chapter15 - 构建赛博小镇</summary>
+
+1. 选择这个课程（另外两个是：智能旅行助手、自动化深度研究智能体）的动机是想了解如何构建一个数字世界，里面可以有员工，可以有或能够增加其它角色；这个系统是一个具有3个AI的agent系统
+
+2. 演示的时候，需要下载解压*Helloagents-AI-Town*到chapter10目录下
+
+3. 为了加快体验，可以修改`NPC_UPDATE_INTERVAL=10`
+
+3. [代码分析和体会](chapter15/readme.md)
+
+</details>
+
 ## 其它资源
 1. Makrdown基础：[Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 2. Datawhale原仓库地址：[hello-agents](https://github.com/datawhalechina/hello-agents)
