@@ -40,7 +40,7 @@
 
 下面是一个从代码分析的角度输出的流程图：
 
-```
+```mermaid
 flowchart TB
     subgraph Client
         UI[Web / Game Client]
@@ -176,7 +176,7 @@ agents = [agent1, ...]
 
 要给出一个框架图：
 
-```
+```mermaid
 flowchart LR
     Env[Environment]
     Agent[Agent]
