@@ -23,14 +23,23 @@
 5. 后端服务【main.py】：由FastAPI创建，启动赛博校长服务端，实现了下面的功能
 
 > "features": ["AI对话", "NPC记忆系统", "好感度系统", "批量状态更新"],
+
 > "endpoints": {
+
 >     "docs": "/docs",
+
 >     "chat": "/chat",
+
 >     "npcs": "/npcs",
+
 >     "npcs_status": "/npcs/status",
+
 >     "npc_memories": "/npcs/{npc_name}/memories",
+
 >     "npc_affinity": "/npcs/{npc_name}/affinity",
+
 >     "all_affinities": "/affinities"
+
 
 ## 画一个架构图
 
@@ -97,9 +106,13 @@ flowchart TB
 原作的赛博小镇系统（一个精炼的MVP级别虚拟世界）设计覆盖了下面几个要素：
 
 > 💬 对话开始
+
 > 🧠 检索记忆
+
 > 🤖 生成回复
+
 > 📊 分析好感度
+
 > 💾 写入记忆
 
 结合上面两个图，应该能对开发多智能体很有启发和帮助。
@@ -112,6 +125,7 @@ flowchart TB
 但从本次课程看，很多步骤去follow去实践，作为一个小型系统，需要从系统设计思路去理解，动手coding或交给AICoding也是可取的。AI或Agent时代，思想更加重要，代码很便宜，tokens相对便宜，但是对于大型Agent系统，tokens很贵！
 
 换句话说，任何Agent本质上可以归结为：
+
 > 感知 → 记忆 → 决策 → 行动 → 继续/结束 [loop]
 
 比如下面的框架示例一个最小的Agent系统：
@@ -199,8 +213,11 @@ flowchart LR
 从本课看，需要习得的结论应该有：
 
 > 状态有哪些
+
 > 决策是什么
+
 > 时间如何变
+
 > 边界在哪里
 
 下一步行动可能是找一个场景实现一个最小化的Multi-Agent系统。
