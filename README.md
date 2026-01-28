@@ -190,6 +190,24 @@ python task0.py
 
 </details>
 
+### Day7 | 毕业设计
+
+<details>
+<summary>chapter16 - 毕业设计</summary>
+情绪驱动的音乐推荐智能体，用AI感知心情，用音乐温暖心灵。
+> 目前它是一个基于 hello-agents 框架构建的情绪音乐推荐智能体。
+
+1. 毕业设计地址：[🧠🎵MindEchoAgent · 心境回响](https://github.com/pamdla/MindEchoAgent.git)
+2. 开发过程与体会：
+    1. 需要基于hello-agents框架进行定制开发自己的agent。因为不那么熟练，导致有些组件使用和组合不太自然。以及想增加更多能力agent和外部接口，因为没找到合适的音乐搜索接口，甚至想找免费或收费的音乐生成大模型的api等，就暂时没有集成这类接口了。
+    2. 为了跑通所有流程，音乐清单使用json记录，本地也没有放置音乐文件，因此页面上没有音乐播放，但留了一个播放位置等。
+    3. 整体系统是两个Agents，4个Tools，具备记忆能力，貌似还缺了个MCP调用，后续得补上。
+3. 未来期望是将这个与智能家居、穿戴设备，甚至是桌面或移动端做接入，至少可以先根据用户的输入，情绪驱动地改变桌面与交互，升级版可以是智能家居设备的交互等。那么就需要设备API的接入和多厂商的设备类型支持。
+4. 保持好奇心，保持关注。
+</details>
+
+
+
 ## 其它资源
 1. Makrdown基础：[Basic Syntax](https://www.markdownguide.org/basic-syntax/)
 2. Datawhale原仓库地址：[hello-agents](https://github.com/datawhalechina/hello-agents)
